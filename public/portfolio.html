@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay M - Python Django Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Ajay M, a Python Django Developer specializing in full-stack web development with Django, React, and PostgreSQL. Building scalable, production-grade applications.">
+    <meta name="author" content="Ajay M">
+    
+    <meta property="og:title" content="Ajay M - Python Django Developer Portfolio">
+    <meta property="og:description" content="Portfolio of Ajay M, a Python Django Developer specializing in full-stack web development with Django, React, and PostgreSQL.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-intro">Hi, my name is</p>
+                <h1 class="hero-title">Ajay M</h1>
+                <h2 class="hero-subtitle">Python Django Developer</h2>
+                
+                <p class="hero-description">
+                    Self-taught Full Stack Developer specializing in building scalable web applications 
+                    with Django, React, and PostgreSQL. Passionate about creating elegant solutions to 
+                    complex problems.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                        Get In Touch
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('experience')">
+                        View My Work
+                    </button>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://github.com/ajaym" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/ajaym" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:ajaymeledath11@gmail.com" class="social-link">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </a>
+                    <a href="tel:7306075055" class="social-link">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-wheel"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="text-lg">
+                        I'm a self-taught Python Django Developer with hands-on experience building 
+                        scalable, production-grade web applications. My expertise spans from designing 
+                        RESTful APIs to integrating AI/ML features and implementing secure authentication systems.
+                    </p>
+                    <p class="text-lg">
+                        With multiple full-stack projects under my belt, I've delivered features like 
+                        real-time validation, email automation, and role-based access control. I'm 
+                        proficient in leveraging AI tools like ChatGPT and GitHub Copilot to accelerate 
+                        development and enhance code quality.
+                    </p>
+                    <p class="text-lg">
+                        Currently working at Knovista Technologies, where I was recognized as
+                        <span class="text-primary font-semibold"> Employee of the Month</span> for 
+                        consistent performance and delivery excellence.
+                    </p>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Education</h3>
+                            <p class="card-text">B.Tech in Computer Science and Engineering</p>
+                            <p class="card-subtext">Kerala Technical University (2021-2025)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Experience</h3>
+                            <p class="card-text">5+ years of freelance development</p>
+                            <p class="card-subtext">Professional work since 2023</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Interests</h3>
+                            <p class="card-text">AI integration, open-source, continuous learning</p>
+                            <p class="card-subtext">Active in developer communities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="exp-header">
+                                <div class="exp-title-group">
+                                    <div class="card-icon">
+                                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="exp-title">Python Full Stack Developer</h3>
+                                        <p class="exp-company">Knovista Technologies</p>
+                                    </div>
+                                </div>
+                                <span class="badge">
+                                    <svg class="icon-sm" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                                        <path d="M12 2v4M6.34 6.34l2.83 2.83M2 12h4M6.34 17.66l2.83-2.83M12 18v4M17.66 17.66l-2.83-2.83M22 12h-4M17.66 6.34l-2.83 2.83"/>
+                                    </svg>
+                                    Top Performer
+                                </span>
+                            </div>
+                            <div class="exp-meta">
+                                <span>Aug 2025 – Present</span>
+                                <span>•</span>
+                                <span>Kochi</span>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Developed and maintained full-stack web applications using Django, DRF, PostgreSQL, React, and JavaScript</li>
+                                <li>Designed and optimized RESTful APIs with secure authentication and role-based access control</li>
+                                <li>Containerized applications using Docker and supported deployment workflows</li>
+                                <li>Mentored interns through technical guidance, code reviews, and task planning</li>
+                                <li>Recognized as Employee of the Month for consistent performance and delivery excellence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="timeline-item timeline-item-reverse">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="exp-header">
+                                <div class="exp-title-group">
+                                    <div class="card-icon">
+                                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="exp-title">Python Django Developer</h3>
+                                        <p class="exp-company">Altos Technologies</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span>April 2025 – Aug 2025</span>
+                                <span>•</span>
+                                <span>Infopark Kochi</span>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Delivered production-ready features for multiple client projects, improving usability and system performance</li>
+                                <li>Designed scalable REST APIs using Django REST Framework, reducing development turnaround time</li>
+                                <li>Built responsive front-end interfaces in React.js, improving UI load performance across devices</li>
+                                <li>Enhanced backend data handling and database queries for faster page load times</li>
+                                <li>Led integration and validation testing efforts, reducing deployment bugs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="exp-header">
+                                <div class="exp-title-group">
+                                    <div class="card-icon">
+                                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="exp-title">Freelance Python Django Developer</h3>
+                                        <p class="exp-company">Remote</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span>Feb 2020 – Present</span>
+                                <span>•</span>
+                                <span>Global</span>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Delivered end-to-end web applications for small businesses and independent clients</li>
+                                <li>Translated client requirements into scalable technical solutions</li>
+                                <li>Developed secure user authentication, role-based access control, and admin dashboards</li>
+                                <li>Built responsive, user-friendly interfaces and integrated RESTful APIs</li>
+                                <li>Performed manual and functional testing to ensure reliability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 4 -->
+                <div class="timeline-item timeline-item-reverse">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="exp-header">
+                                <div class="exp-title-group">
+                                    <div class="card-icon">
+                                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="exp-title">Web Development Intern</h3>
+                                        <p class="exp-company">INTRAINZ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span>Sept 2023 – Nov 2023</span>
+                                <span>•</span>
+                                <span>Remote</span>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Contributed to building production-ready application modules using Django and JavaScript</li>
+                                <li>Developed responsive UI components with HTML, CSS, and JavaScript</li>
+                                <li>Integrated RESTful APIs to streamline data exchange between systems</li>
+                                <li>Participated in peer code reviews and followed version control standards using Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="card">
+                    <div class="skill-header">
+                        <div class="card-icon">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Programming & Web</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="skill-header">
+                        <div class="card-icon">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">Django REST Framework</span>
+                        <span class="skill-badge">React.js</span>
+                        <span class="skill-badge">jQuery</span>
+                        <span class="skill-badge">AJAX</span>
+                        <span class="skill-badge">Bootstrap</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="skill-header">
+                        <div class="card-icon">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Databases</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">SQLite</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="skill-header">
+                        <div class="card-icon">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">Heroku</span>
+                        <span class="skill-badge">PythonAnywhere</span>
+                        <span class="skill-badge">Stripe</span>
+                        <span class="skill-badge">Razorpay</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card interests-card">
+                <h3 class="interests-title">What I <span class="text-gradient">Love</span> Doing</h3>
+                <div class="interests-list">
+                    <span class="interest-item">
+                        <span class="arrow">▹</span>
+                        Building AI-integrated tools
+                    </span>
+                    <span class="interest-item">
+                        <span class="arrow">▹</span>
+                        Contributing to open-source
+                    </span>
+                    <span class="interest-item">
+                        <span class="arrow">▹</span>
+                        Reading technical blogs
+                    </span>
+                    <span class="interest-item">
+                        <span class="arrow">▹</span>
+                        Engaging with dev communities
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    I'm currently open to new opportunities and interesting projects. 
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <a href="mailto:ajaymeledath11@gmail.com" class="card contact-card">
+                    <div class="card-icon">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="contact-title">Email</h3>
+                        <p class="contact-text">ajaymeledath11@gmail.com</p>
+                    </div>
+                </a>
+                
+                <a href="tel:7306075055" class="card contact-card">
+                    <div class="card-icon">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="contact-title">Phone</h3>
+                        <p class="contact-text">+91 7306075055</p>
+                    </div>
+                </a>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="contact-title">Location</h3>
+                        <p class="contact-text">Kochi, Kerala, India</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="contact-title">Connect Online</h3>
+                        <div class="contact-buttons">
+                            <button class="btn-small" onclick="window.open('https://github.com/ajaym', '_blank')">
+                                <svg class="icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </button>
+                            <button class="btn-small" onclick="window.open('https://linkedin.com/in/ajaym', '_blank')">
+                                <svg class="icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                                LinkedIn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <button class="btn btn-primary btn-lg" onclick="window.location.href='mailto:ajaymeledath11@gmail.com'">
+                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    Send Me an Email
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2025 Ajay M. Built with React, TypeScript, and Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
